@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <hr><br/>
+        <table border="3" cellpadding="6" cellspacing="1" align="center">
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Max</th>
+                    <th>Min</th>
+                    <th>Perbedaan</th>
+                </tr>       
+            </thead>       
+            <tbody>        
+                {{ range $key, $value := .Data }}  
+                <tr align="center">
+                    <td><a href="/?aksi=detail&tanggal={{ $value.Tanggal }}">{{ $value.Tanggal }}</a></td>
+                    <td>{{ $value.Max }}</td>
+                    <td>{{ $value.Min }}</td>
+                    <td>{{ $value.Perbedaan }}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+            <tfoot>
+                {{ range $key, $value := .Average }}
+                <tr>
+                    <th>Rata-rata</th>
+                    <th>{{ $value.AvgMax }}</th>
+                    <th>{{ $value.AvgMin }}</th>
+                    <th>{{ $value.AvgPerbedaan }}</th>
+                </tr>
+                {{ end }}
+            </tfoot>
+        </table><br/>
+        <center/><a href="/?aksi=tambah"><button>Tambah</button></a>
+    </body> 
+</html> 

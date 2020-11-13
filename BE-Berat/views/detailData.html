@@ -1,0 +1,27 @@
+<html>  
+    <body>
+        <table border="3" cellpadding="6" cellspacing="1" align="center">
+            <tbody>
+                {{ range $key, $value := .Data }}
+                <tr align="center">
+                    <th>Tanggal</th>
+                    <th>{{ $value.Tanggal }}</th>
+                </tr>
+                <tr align="center">
+                    <td>Min</td>
+                    <td>{{ $value.Max }}</td>
+                </tr>
+                <tr align="center">
+                    <td>Max</td>
+                    <td>{{ $value.Min }}</td>
+                </tr>
+                <tr align="center">
+                    <td>Perbedaan</td>
+                    <td>{{ $value.Perbedaan }}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table><br/>
+        <center/><a href="/">back</a>
+    </body>
+</html>
