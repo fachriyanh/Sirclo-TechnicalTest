@@ -1,9 +1,11 @@
 package routes
 
 import (
-	src "BE-Berat/config"
-	"BE-Berat/models"
 	"log"
+
+	"github.com/Sirclo-TechnicalTest/BE-Berat/models"
+
+	src "github.com/Sirclo-TechnicalTest/BE-Berat/config"
 )
 
 //db connection

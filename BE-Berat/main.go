@@ -1,9 +1,10 @@
 package main
 
 import (
-	"BE-Berat/controllers"
 	"fmt"
 	"net/http"
+
+	"github.com/Sirclo-TechnicalTest/BE-Berat/controllers"
 )
 
 func main() {

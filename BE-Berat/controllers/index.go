@@ -1,12 +1,13 @@
 package controllers
 
 import (
-	"BE-Berat/controllers/routes"
 	"log"
 	"net/http"
 	"os"
 	"strconv"
 	"text/template"
+
+	"github.com/Sirclo-TechnicalTest/BE-Berat/controllers/routes"
 )
 
 func Controller(w http.ResponseWriter, r *http.Request) {

@@ -1,8 +1,9 @@
 package routes
 
 import (
-	"BE-Berat/models"
 	"log"
+
+	"github.com/Sirclo-TechnicalTest/BE-Berat/models"
 )
 
 func GetBerat() models.Response {

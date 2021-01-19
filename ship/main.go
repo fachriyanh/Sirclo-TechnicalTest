@@ -1,6 +1,6 @@
 package main
 
-import "ship/kapal"
+import "github.com/Sirclo-TechnicalTest/ship/kapal"
 
 func main() {
 	var tictanic kapal.KapalPesiar
